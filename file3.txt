@@ -1,3 +1,5 @@
+nama : garuda
+
 note :
 (.) titik = keseluruhan
 nama_file = spesifik file tersebut
