@@ -20,6 +20,8 @@ git show (code hasnya) : untuk melihat perubahan pada commit
 git diff (code hash 1) (code hash 2) : untuk membandingkan 2 commit secara spesifik
 git commit --amend : untuk reset soft commit sebelumnya
 git checkout hash -- file_name = untuk mengambil versi file sebelumnya
+git branch --show-current = untuk mengecek branch yang sedang digunakan
+
 
 catatan :
 - difftool 83
