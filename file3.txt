@@ -22,9 +22,12 @@ git commit --amend : untuk reset soft commit sebelumnya
 git checkout hash -- file_name = untuk mengambil versi file sebelumnya
 git branch --show-current = untuk mengecek branch yang sedang digunakan
 <<<<<<< HEAD
+<<<<<<< HEAD
 git revert hash = untuk membatalkan commit yang sedang dilakukan
 eko
 
+=======
+>>>>>>> parent of 3b00a30 (baru)
 =======
 >>>>>>> parent of 3b00a30 (baru)
 
@@ -35,3 +38,14 @@ catatan :
 
 hash 1 : 8338e852f97cbcf16dc1650d688d776dcb7228ed
 hash 2 : 496ad539bd51cd6c9aa1a59d69ac2fca4f69eac9
+
+GIT RESET 
+Perumpamaan :
+working directory : kertas kosong
+staging area : kertas berada di meja guru
+commit : kertas di simpan di meja loker guru
+
+mode : 
+- soft : kertas di kembalikan ke meja guru artinya perubahan dikembalikan ke staging index
+- mixed : kertas seluruhnya dihapus atau dikembalikan ke yang mengerjakannya artinya dikembalikan ke working directory
+- hard : kertas seluruhnya dirobek artinya perubahan benar benar dihapus
