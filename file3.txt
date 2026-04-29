@@ -22,6 +22,7 @@ git commit --amend : untuk reset soft commit sebelumnya
 git checkout hash -- file_name = untuk mengambil versi file sebelumnya
 git branch --show-current = untuk mengecek branch yang sedang digunakan
 git revert hash = untuk membatalkan commit yang sedang dilakukan
+eko
 
 
 
