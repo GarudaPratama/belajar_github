@@ -21,6 +21,8 @@ git diff (code hash 1) (code hash 2) : untuk membandingkan 2 commit secara spesi
 git commit --amend : untuk reset soft commit sebelumnya
 git checkout hash -- file_name = untuk mengambil versi file sebelumnya
 git branch --show-current = untuk mengecek branch yang sedang digunakan
+git revert hash = untuk membatalkan commit yang sedang dilakukan
+
 
 
 catatan :
