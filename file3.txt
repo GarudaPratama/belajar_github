@@ -24,6 +24,13 @@ git branch --show-current = untuk mengecek branch yang sedang digunakan
 <<<<<<< HEAD
 <<<<<<< HEAD
 git revert hash = untuk membatalkan commit yang sedang dilakukan
+git switch namabranch
+git checkout namabranch : untuk pindah branch
+git branch -m namabranchbaru : mengubah nama branch
+git branch -d namabranch
+git branch --delete namabranch : menghapus branch
+
+
 eko
 
 =======
