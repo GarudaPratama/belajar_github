@@ -29,6 +29,7 @@ git checkout namabranch : untuk pindah branch
 git branch -m namabranchbaru : mengubah nama branch
 git branch -d namabranch
 git branch --delete namabranch : menghapus branch
+git stash : digunakan untuk melakukan perubahan pada branch, namun perubahan tersebut belum tersimpan di repo
 
 
 eko
