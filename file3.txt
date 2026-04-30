@@ -56,3 +56,10 @@ mode :
 - soft : kertas di kembalikan ke meja guru artinya perubahan dikembalikan ke staging index
 - mixed : kertas seluruhnya dihapus atau dikembalikan ke yang mengerjakannya artinya dikembalikan ke working directory
 - hard : kertas seluruhnya dirobek artinya perubahan benar benar dihapus
+
+catatan :
+cara merge spesifik pada commit:
+1. buka branch yang kita ingin gunakan perubahan pada commitnya
+2. selanjutnya kita liat hash nya menggunakan git log --oneline
+3. copy hash code nya
+4. kita balik ke branch master lalu git cherry-pick "hash" codenya
