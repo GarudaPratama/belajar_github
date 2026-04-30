@@ -63,3 +63,4 @@ cara merge spesifik pada commit:
 2. selanjutnya kita liat hash nya menggunakan git log --oneline
 3. copy hash code nya
 4. kita balik ke branch master lalu git cherry-pick "hash" codenya
+siuu
