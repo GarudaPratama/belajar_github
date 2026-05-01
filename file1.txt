@@ -1,1 +1,70 @@
-bb
+1. Gitflow Workflow
+
+Gitflow adalah model branching yang sangat terstruktur dan memiliki aturan ketat. Model ini
+memisahkan pekerjaan ke dalam beberapa branch spesifik untuk menjaga stabilitas kode.
+
+Branch Utama (Long-lived):
+
+main (atau master): Hanya berisi kode versi stabil yang siap digunakan oleh pengguna (Production).
+
+develop: Berisi kode pengembangan terbaru yang akan dipersiapkan untuk rilis berikutnya.
+
+Branch Pendukung (Short-lived):
+
+feature/*: Dibuat dari develop untuk mengerjakan fitur baru. Jika selesai, di-
+merge kembali ke develop.
+
+release/*: Dibuat dari develop untuk persiapan rilis. Digunakan untuk perbaikan
+bug minor dan dokumentasi sebelum rilis. Setelah siap, di-merge ke main dan develop.
+
+hotfix/*: Dibuat langsung dari main untuk memperbaiki bug kritis di Production
+dengan cepat. Di-merge kembali ke main dan develop.
+
+Kapan digunakan: Sangat cocok untuk proyek besar dengan jadwal rilis yang terencana
+(misalnya rilis versi aplikasi setiap bulan). Kurang cocok untuk tim yang ingin merilis kode
+setiap hari karena proses integrasinya cukup panjang.
+
+2. Trunk Based Development Workflow
+Berbeda dengan Gitflow yang kompleks, Trunk Based Development (TBD) sangat fokus pada
+kecepatan, kesederhanaan, dan Continuous Integration (CI).
+
+Konsep Utama:
+
+Semua developer menggabungkan (commit/merge) kode mereka secara langsung ke
+satu branch utama (trunk atau main) sesering mungkin (bahkan berkali-kali dalam sehari).
+
+Jika menggunakan branch fitur, umurnya sangat pendek (biasanya selesai dalam
+hitungan jam atau maksimal beberapa hari).
+
+Sangat bergantung pada automated testing (pengujian otomatis) untuk memastikan
+kode baru tidak merusak main.
+
+Sering menggunakan Feature Flags/Toggles untuk menyembunyikan fitur yang belum
+selesai di Production, sehingga kode tetap bisa dirilis meski fitur belum 100% rampung.
+
+Kapan digunakan: Pilihan utama untuk tim Agile modern, startup, dan perusahaan yang
+menerapkan praktik CI/CD (merilis update ke server setiap hari).
+
+3. Forking Workflow
+Forking Workflow berbeda karena berfokus pada kontrol akses dan kepemilikan repositori,
+bukan sekadar membagi branch di dalam satu repositori yang sama.
+
+Konsep Utama:
+
+Alih-alih memberikan semua developer akses write (tulis/edit) ke repositori utama
+(upstream), setiap developer menekan tombol "Fork" untuk membuat salinan penuh
+repositori tersebut ke akun mereka sendiri.
+
+Developer mengerjakan kode di repositori hasil fork mereka sendiri (biasanya mereka
+juga membuat feature branch di dalam fork tersebut).
+
+Setelah selesai, mereka mengajukan Pull Request (PR) atau Merge Request ke
+repositori utama.
+
+Maintainer (pengelola) repositori utama akan me-review kode tersebut. Jika aman
+dan sesuai, mereka akan menggabungkannya ke repositori utama.
+
+Kapan digunakan: Ini adalah standar mutlak untuk proyek Open Source (seperti di
+GitHub/GitLab) karena memungkinkan siapa saja berkontribusi tanpa memerlukan izin
+akses langsung ke repositori asli. Juga sering digunakan di perusahaan besar untuk membatasi akses
+ke kode inti.
