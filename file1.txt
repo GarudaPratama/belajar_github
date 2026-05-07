@@ -68,3 +68,6 @@ Kapan digunakan: Ini adalah standar mutlak untuk proyek Open Source (seperti di
 GitHub/GitLab) karena memungkinkan siapa saja berkontribusi tanpa memerlukan izin
 akses langsung ke repositori asli. Juga sering digunakan di perusahaan besar untuk membatasi akses
 ke kode inti.
+
+https://github.com/GarudaPratama/belajar_github.git
+
